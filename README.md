@@ -3,7 +3,7 @@
 ## Table of Contents
 * About
 * Requirements
-* Run the Programme
+* Run the Project
 
 ## About
   The Log-Analysis-Project is about retriving news data from a news database and reporting answers to the following three questions:
@@ -18,7 +18,7 @@
   4. Terminal or Git bash ( [Download here](https://git-scm.com/downloads))
   5. PostgreSQL ( [Download here](https://www.postgresql.org/download/))
   
-## Run the Programme
+## Run the Project
   1. Download the FSND-Virtual-Machine folder and newsdata.sql provided in the Project instructions.
   2. Launch Virtual box with vagrant up and vagrant ssh command in the terminal.
   3. Cd into the vagrant directory and use the command psql -d news -f newsdata.sql.
