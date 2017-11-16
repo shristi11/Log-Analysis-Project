@@ -20,7 +20,7 @@
   6. newsdata.zip ( [Download here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip))
   
 ## Run the Project
-  1. Extract the newsdata.sql file from `newdata.zip` in vagrant directory.  
+  1. Extract the `newsdata.sql` file from `newdata.zip` in vagrant directory.  
   2. Launch Virtual box with `vagrant up` and `vagrant ssh` command in the terminal.
   3. Cd into the vagrant directory and use the command psql -d news -f newsdata.sql.
   4. Use the command python newslog.py to report the result.
