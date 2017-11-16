@@ -17,11 +17,11 @@
   3. Vagrant ( [Download here](https://www.vagrantup.com/downloads.html))
   4. Terminal or Git bash ( [Download here](https://git-scm.com/downloads))
   5. PostgreSQL ( [Download here](https://www.postgresql.org/download/))
+  6. newsdata.zip ( [Download here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip))
   
 ## Run the Project
-  1. Download the FSND-Virtual-Machine folder and newsdata.sql provided in the Project instructions.
-  2. Launch Virtual box with vagrant up and vagrant ssh command in the terminal.
+  1. Extract the newsdata.sql file from `newdata.zip` in vagrant directory.  
+  2. Launch Virtual box with `vagrant up` and `vagrant ssh` command in the terminal.
   3. Cd into the vagrant directory and use the command psql -d news -f newsdata.sql.
-  4. Create the newslog.py file.
-  5. Use the command python newslog.py to report the result.
+  4. Use the command python newslog.py to report the result.
   
