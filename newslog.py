@@ -2,7 +2,7 @@
 
 import psycopg2
 
-DBNAME="news"
+DBNAME = "news"
 
 
 def get_conn(query):
@@ -54,7 +54,7 @@ query3 = """
       WHERE (ROUND(((errors.error_requests*1.0) / total.requests), 3) > 0.01)
       ORDER BY percent DESC;
 """
-   
+
 
 def first_query(query):
     results = get_conn(query)
@@ -62,7 +62,7 @@ def first_query(query):
     for title, views in results:
         print(' "{}" -- {} views'.format(title, views))
         
-
+        
 def second_query(query):
     results = get_conn(query)
     print('\n2. The most popular article authors of all time are:\n')
@@ -72,7 +72,7 @@ def second_query(query):
 
 def third_query(query):
     results = get_conn(query)
-    print('\n3. The day on which more than 1 percent of requests lead to errors:\n')
+    print('\n3. The day on which more than 1 % of requests lead to errors:\n')
     for result in results:
         print('  {0:%B %d, %Y} - {1:%} errors'.format(result[0], result[1]))
 
@@ -84,4 +84,4 @@ def main():
 
 
 if __name__ == '__main__':
-  main()
+    main()
